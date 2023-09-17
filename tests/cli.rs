@@ -17,6 +17,13 @@ fn runs(){
 }
 
 #[test]
+fn runs_ls(){
+    let mut cmd = Command::new("ls");
+    let res = cmd.output();
+    assert!(res.is_ok());
+}
+
+#[test]
 fn true_ok(){
     let mut cmd = Command::cargo_bin("true").unwrap();
     cmd.assert().success();
