@@ -3,3 +3,7 @@
 https://learning.oreilly.com/library/view/command-line-rust/
 
 * cargo test
+
+## Bin
+- true
+- false
